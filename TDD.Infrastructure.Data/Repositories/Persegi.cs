@@ -25,7 +25,9 @@ namespace TDD.Infrastructure.Data.Repositories
 
         public double Keliling()
         {
-            throw new NotImplementedException();
+            double keliling = 2*(Panjang + Lebar);
+
+            return keliling;
         }
 
         public double Luas()
