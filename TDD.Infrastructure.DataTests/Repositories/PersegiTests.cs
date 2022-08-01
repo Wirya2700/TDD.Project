@@ -54,7 +54,9 @@ namespace TDD.Infrastructure.Data.Repositories.Tests
         [TestMethod()]
         public void TestPersegi_Hitung_Keliling()
         {
-            Assert.Fail();
+            Persegi persegi = new Persegi(10, 10);
+
+            Assert.IsTrue(persegi.Keliling() == (2 * (persegi.Panjang + persegi.Lebar)));
         }
 
         [TestMethod()]
