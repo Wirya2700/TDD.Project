@@ -30,7 +30,9 @@ namespace TDD.Infrastructure.Data.Repositories
 
         public double Luas()
         {
-            throw new NotImplementedException();
+            double luas = Panjang * Lebar;
+
+            return luas;
         }
     }
 }
