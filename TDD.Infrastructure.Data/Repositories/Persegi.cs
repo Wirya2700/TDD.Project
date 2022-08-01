@@ -27,6 +27,11 @@ namespace TDD.Infrastructure.Data.Repositories
         {
             double keliling = 2*(Panjang + Lebar);
 
+            if (double.IsInfinity(keliling))
+            {
+                throw new Exception("Keliling tak terhingga, tidak valid");
+            }
+
             return keliling;
         }
 
