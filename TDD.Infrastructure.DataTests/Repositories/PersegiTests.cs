@@ -14,7 +14,16 @@ namespace TDD.Infrastructure.Data.Repositories.Tests
         [TestMethod()]
         public void PersegiTest_Infinity_Panjang_Lebar()
         {
-            Assert.Fail();
+            try
+            {
+                Persegi persegi = new Persegi(double.MaxValue + double.MaxValue, double.MaxValue + double.MaxValue);
+
+                Assert.Fail();
+            }
+            catch (Exception ex)
+            {
+                Assert.IsTrue(ex.Message == "Panjang atau Lebar tak terhingga, tidak valid");
+            }
         }
 
         [TestMethod()]
