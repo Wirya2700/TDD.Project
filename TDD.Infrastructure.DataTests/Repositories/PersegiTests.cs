@@ -29,7 +29,9 @@ namespace TDD.Infrastructure.Data.Repositories.Tests
         [TestMethod()]
         public void TestPersegi_Hitung_Luas()
         {
-            Assert.Fail();
+            Persegi persegi = new Persegi(10, 10);
+
+            Assert.IsTrue(persegi.Luas() == 100);
         }
 
         [TestMethod()]
