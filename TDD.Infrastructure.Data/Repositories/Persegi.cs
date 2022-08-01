@@ -16,6 +16,11 @@ namespace TDD.Infrastructure.Data.Repositories
         {
             Panjang = panjang;
             Lebar = lebar;
+
+            if(double.IsInfinity(panjang) || double.IsInfinity(lebar))
+            {
+                throw new Exception("Panjang atau Lebar tak terhingga, tidak valid");
+            }
         }
 
         public double Keliling()
