@@ -32,6 +32,11 @@ namespace TDD.Infrastructure.Data.Repositories
         {
             double luas = Panjang * Lebar;
 
+            if (double.IsInfinity(luas))
+            {
+                throw new Exception("Luas tak terhingga, tidak valid");
+            }
+
             return luas;
         }
     }
