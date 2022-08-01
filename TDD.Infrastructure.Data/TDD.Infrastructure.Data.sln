@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.Infrastructure.Data", "TDD.Infrastructure.Data.csproj", "{AF22312D-D903-4756-81E9-1892EAE750BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.Infrastructure.DataTests", "..\TDD.Infrastructure.DataTests\TDD.Infrastructure.DataTests.csproj", "{642961CE-3175-45F5-A120-44D3A3E56663}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF22312D-D903-4756-81E9-1892EAE750BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF22312D-D903-4756-81E9-1892EAE750BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF22312D-D903-4756-81E9-1892EAE750BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF22312D-D903-4756-81E9-1892EAE750BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642961CE-3175-45F5-A120-44D3A3E56663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642961CE-3175-45F5-A120-44D3A3E56663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642961CE-3175-45F5-A120-44D3A3E56663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642961CE-3175-45F5-A120-44D3A3E56663}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E2AB67F-C545-4CF8-9B0D-00BC482E761A}
+	EndGlobalSection
+EndGlobal
