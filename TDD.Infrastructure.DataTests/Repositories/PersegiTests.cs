@@ -41,6 +41,8 @@ namespace TDD.Infrastructure.Data.Repositories.Tests
             {
                 Persegi persegi = new Persegi(double.MaxValue, double.MaxValue);
 
+                persegi.Luas();
+
                 Assert.Fail();
             }
             catch (Exception ex)
