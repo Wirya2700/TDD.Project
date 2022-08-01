@@ -37,7 +37,16 @@ namespace TDD.Infrastructure.Data.Repositories.Tests
         [TestMethod()]
         public void PersegiTest_Hitung_Luas_Infinity()
         {
-            Assert.Fail();
+            try
+            {
+                Persegi persegi = new Persegi(double.MaxValue, double.MaxValue);
+
+                Assert.Fail();
+            }
+            catch (Exception ex)
+            {
+                Assert.IsTrue(ex.Message == "Luas tak terhingga, tidak valid");
+            }
         }
 
         [TestMethod()]
