@@ -62,7 +62,18 @@ namespace TDD.Infrastructure.Data.Repositories.Tests
         [TestMethod()]
         public void PersegiTest_Hitung_Keliling_Infinity()
         {
-            Assert.Fail();
+            try
+            {
+                Persegi persegi = new Persegi(double.MaxValue, double.MaxValue);
+
+                persegi.Keliling();
+
+                Assert.Fail();
+            }
+            catch (Exception ex)
+            {
+                Assert.IsTrue(ex.Message == "Keliling tak terhingga, tidak valid");
+            }
         }
     }
 }
